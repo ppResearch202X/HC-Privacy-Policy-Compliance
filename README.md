@@ -31,7 +31,7 @@ pip install -r requirements.txt
 #### 1. RQ1 – Automated UI‑testing pipeline
 
 `RQ1/UI_testing.sh` is a Bash script meant to be run **inside the Android Studio terminal (or any shell where `adb` is on the PATH)**. It installs each APK, exercises the UI, and captures screenshots of the Health Connect permission rationale dialog.
-* **Running the script**
+**Running the script**
 
   ```bash
   cd RQ1
@@ -47,13 +47,13 @@ pip install -r requirements.txt
 | sub‑folder                 | purpose                                                                                                                                                                      |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`ML_based_detection/`**  | Traditional machine‑learning classifiers (`lr.py`, `rf.py`, `svm.py`) trained on static‑code embeddings (already extracted and shipped as `HC‑compatible_apps_embed_*.pkl`). |
-| **`LLM_based_detection/`** | A lightweight script (`llm.py`) that queries a large‑language model to reason over raw Java source and privacy‑policy text.                                                  |
+| **`LLM_based_detection/`** | A lightweight script (`llm.py`) that queries a large‑language model to reason over raw Java source and rationale declaration text.                                                  |
 
 ---
 
 ##### ML‑based detection
 
-* **Running an experiment**
+**Running an experiment**
 
   ```bash
   cd RQ2/ML_based_detection
@@ -71,6 +71,7 @@ pip install -r requirements.txt
 
 `RQ2/LLM_based_detection/llm.py` reads **rationale Java source files** and **privacy‑rationale declarations**. These input archives are hosted on our [project website]([https://example.com](https://sites.google.com/view/privacyinmhealth/datasets)) — download them and point the script to the extracted folders:
 
+**Running an experiment**
 ```bash
 cd RQ2/LLM_based_detection
 python llm.py
