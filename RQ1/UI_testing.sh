@@ -1,7 +1,7 @@
 # set your waits once up front
-$packageDir      = ""
-$dumpXmlDir      = ""
-$screenshotDir   = ""
+$packageDir      = "" # the folder that saves apk files to get package name
+$dumpXmlDir      = "" # the folder to save the intermediate UI page xml to extract coordinate info
+$screenshotDir   = "" # the folder to save the HC permission rationale display results
 $postLaunchWait  = 1   # 1 at least
 $downloadWait    = 15  # 15 at least
 $screenshotWait  = 8  # 8 at least
