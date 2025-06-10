@@ -68,7 +68,7 @@ Running an experiment
 
 * LLM‑based detection
 
-`RQ2/LLM_based_detection/llm.py` reads **rationale Java source files** and **privacy‑rationale declarations**. These input archives are hosted on our [project website]([https://example.com](https://sites.google.com/view/privacyinmhealth/datasets)) — download them and point the script to the extracted folders:
+`RQ2/LLM_based_detection/llm.py` reads **rationale Java source files** and **privacy‑rationale declarations**. These input archives are hosted on our [project website](https://sites.google.com/view/privacyinmhealth/datasets) — download them and point the script to the extracted folders:
 
 Running an experiment
 ```bash
