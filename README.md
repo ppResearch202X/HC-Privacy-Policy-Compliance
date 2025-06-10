@@ -37,7 +37,7 @@ Running the script
   ```
 
 
-#### 2. RQ2 - ML/LLM-based Accessibility Detection
+#### 2. RQ2 – ML/LLM-based Accessibility Detection
 
 `RQ2/` contains two approaches for identifying whether an app correctly implements the required *privacy‑rationale* Activity at code level.
 
@@ -73,13 +73,13 @@ python llm.py
 
 The script streams model thoughts to the console and saves a JSON containing per‑app verdicts. Feel free to tweak the prompt or use a different API endpoint.
 
-#### 3. RQ3 - Permission‑clarity & privacy‑policy disclosure analysis
+#### 3. RQ3 – Permission‑clarity & privacy‑policy disclosure analysis
 
 `RQ3_src/` provides a **worked example on four apps**—two whose privacy policies are available as plain text and two where the policy is only visible in a screenshot. This mirrors the two extraction strategies described in the paper (link/UI copy‑paste vs. screenshot OCR).
 
 | sub‑folder        | contents                                                                                      |
 | ----------------- | --------------------------------------------------------------------------------------------- |
-| `permission_png/` | Screenshots of the HC permission‑rationale dialog (`pp_1.png`, `pp_2.png`) for each demo app. |
+| `permission_png/` | Screenshots of the HC permissions request for each demo app.                                  |
 | `pp_txt/`         | Plain‑text privacy‑policies for two apps where a hyperlink was available.                     |
 | `pp_png/`         | Screenshots of privacy‑policy pages when text could not be captured directly.                 |
 | `llm_analysis.py` | Driver script that runs permission‑clarity and disclosure scoring using OCR + an LLM prompt.  |
@@ -98,7 +98,7 @@ The script will
 3. Query the LLM to score clarity / justification quality;
 4. Save per‑app metrics to the output JSON and print a short table.
 
-Grab the complete HC‑compatible dataset from our [project website]([https://example.com](https://sites.google.com/view/privacyinmhealth/datasets) and run the experiment to produce the JSON replicates the disclosure‑analysis numbers reported in Section 5 of the paper.
+Grab the complete HC‑compatible dataset from our [project website](https://sites.google.com/view/privacyinmhealth/datasets) and run the experiment to produce the JSON replicates the disclosure‑analysis numbers reported in Section 5 of the paper.
 
 
 ### Contributing
