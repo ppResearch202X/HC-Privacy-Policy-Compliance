@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ### Usage
 
-RQ1 – Automated UI‑testing pipeline
+#### RQ1 – Automated UI‑testing pipeline
 
 `RQ1/UI_testing.sh` is a Bash script meant to be run **inside the Android Studio terminal (or any shell where `adb` is on the PATH)**. It installs each APK, exercises the UI, and captures screenshots of the Health Connect permission rationale dialog.
 * **Running the script**
@@ -40,6 +40,7 @@ RQ1 – Automated UI‑testing pipeline
   ```
 
 
+#### RQ2 - ML/LLM-based Accessibility Detection
   
 ---
 
