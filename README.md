@@ -31,6 +31,7 @@ pip install -r requirements.txt
 #### 1. RQ1 – Automated UI‑testing pipeline
 
 `RQ1/UI_testing.sh` is a Bash script meant to be run **inside the Android Studio terminal (or any shell where `adb` is on the PATH)**. It installs each APK, exercises the UI, and captures screenshots of the Health Connect permission rationale dialog.
+
 **Running the script**
 
   ```bash
@@ -51,7 +52,7 @@ pip install -r requirements.txt
 
 ---
 
-##### ML‑based detection
+* ML‑based detection
 
 **Running an experiment**
 
@@ -65,9 +66,7 @@ pip install -r requirements.txt
   
   Each script automatically loads the pre‑computed embeddings, fits the model, prints accuracy / F1 / AUC to stdout, and writes predictions to `pred_<model>.csv`.
 
----
-
-##### LLM‑based detection
+* LLM‑based detection
 
 `RQ2/LLM_based_detection/llm.py` reads **rationale Java source files** and **privacy‑rationale declarations**. These input archives are hosted on our [project website]([https://example.com](https://sites.google.com/view/privacyinmhealth/datasets)) — download them and point the script to the extracted folders:
 
