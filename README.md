@@ -4,7 +4,6 @@ Health Connect (HC) is Google’s new Android platform layer that lets mobile�
 
 This repository contains the artifacts, code, and datasets for the **first large‑scale compliance audit** of those requirements. We analysed **673 real‑world mHealth APKs** using a pipeline that blends automated UI exploration, static code analysis, and machine‑learning classifiers. Our study shows that **50.4 % of apps either omit or incorrectly implement the mandated dialog**, and that **76.2 % of privacy‑policy texts fail to justify the requested permissions**.
 
----
 
 ## Table of Contents
 
@@ -14,7 +13,6 @@ This repository contains the artifacts, code, and datasets for the **first large
   * [Usage](#usage)
   
 
----
 
 ## How to Use
 
